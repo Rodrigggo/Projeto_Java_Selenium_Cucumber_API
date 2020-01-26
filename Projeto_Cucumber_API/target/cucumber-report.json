@@ -1,0 +1,121 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 11228393200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultarVagasStep.before()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Acessar a tela confira nossas vaga",
+        "description": "",
+        "id": "consultar-vagas;acessar-a-tela-confira-nossas-vaga;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 696583100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "ConsultarVagasStep.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 47342579900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Acessar o site \"https://www.inmetrics.com.br/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://www.inmetrics.com.br/",
+                  "offset": 16
+                }
+              ],
+              "location": "ConsultarVagasStep.acessar_o_site(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38441415200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Acessar a pagina confira nossas vagas",
+            "match": {
+              "location": "ConsultarVagasStep.acessar_a_pagina_confira_nossas_vagas()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2352837600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Realizar uma consulta no departamento \"Consulting\" para o estado \"Barueri\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Consulting",
+                  "offset": 39
+                },
+                {
+                  "val": "Barueri",
+                  "offset": 66
+                }
+              ],
+              "location": "ConsultarVagasStep.realizar_uma_consulta_no_departamento_para_o_estado(String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@StartFeatureConsultarVagas"
+          },
+          {
+            "line": 5,
+            "name": "@FinishFeatureConsultarVagas"
+          }
+        ]
+      }
+    ],
+    "name": "Consultar vagas",
+    "description": "",
+    "id": "consultar-vagas",
+    "keyword": "Feature",
+    "uri": "ConsultarVagas.feature"
+  },
+  {
+    "line": 1,
+    "name": "Realizar o GET na API SwAip",
+    "description": "",
+    "id": "realizar-o-get-na-api-swaip",
+    "keyword": "Feature",
+    "uri": "RealizarGetApi.feature"
+  }
+]

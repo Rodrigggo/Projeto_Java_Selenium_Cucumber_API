@@ -1,6 +1,6 @@
 Feature: Consultar vagas
 
-   #@ignore
+  #@ignore
   @StartFeatureConsultarVagas
   @FinishFeatureConsultarVagas
   Scenario Outline: Acessar a tela confira nossas vaga
